@@ -70,4 +70,8 @@ for t in clientes:
 for t in processadores_de_estoque:
     t.join()
 
+print(f"{Fore.MAGENTA}{Style.BRIGHT}Estoque:")
+for produto, quantidade in estoque.items():
+    print(f"{Fore.MAGENTA}{Style.BRIGHT} Produto: {produto} | {quantidade} unidades")
+
 print(f"{Fore.CYAN}End")
