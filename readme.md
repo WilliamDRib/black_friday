@@ -11,3 +11,5 @@ Este projeto é uma prova de conceito (PoC) para um sistema de gerenciamento de 
 - Processamento de pedidos em tempo real por múltiplos processadores de estoque.
 - Sincronização das operações de estoque para evitar problemas de concorrência.
 - Saídas coloridas para facilitar a identificação de eventos no terminal.
+
+Relatório: https://docs.google.com/document/d/1VBHwpndfBJ4gMynqht2UB7-fGcZI6NgZ6Cbc-MyQ8G4/edit?usp=sharing 
