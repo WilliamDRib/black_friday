@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq_service
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - app_network
+  
+  app:
+    build:
+      context: .
+    container_name: app_service
+    depends_on:
+      - rabbitmq
+    environment:
+      - RABBITMQ_HOST=rabbitmq
+    networks:
+      - app_network
+    scale: 1
+
+
+networks:
+  app_network:
+    driver: bridge

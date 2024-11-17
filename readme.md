@@ -23,3 +23,13 @@ Este projeto é uma prova de conceito (PoC) que demonstra como threads podem ser
 - Ao final, o estoque restante é exibido, assim como os pedidos processados.
 
 Relatório: https://docs.google.com/document/d/1VBHwpndfBJ4gMynqht2UB7-fGcZI6NgZ6Cbc-MyQ8G4/edit?usp=sharing 
+
+## Comandos
+
+- docker-compose up --build
+- acessar o rabbitMQ : http://localhost:15672/
+user: guest
+pass: guest
+
+- docker logs app_service
+- docker logs rabbitmq_service
